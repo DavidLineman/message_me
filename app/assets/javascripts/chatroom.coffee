@@ -10,4 +10,4 @@ App.chatroom = App.cable.subscriptions.create "ChatroomChannel",
 
 
   received: (data) ->
-    alert data.foo
+    $('#message-container').append data.mod_message
